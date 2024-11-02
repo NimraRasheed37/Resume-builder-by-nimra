@@ -85,12 +85,12 @@ nav a:hover {
   width: 400px;
   height: 100%;
   position: fixed;
-  right: -400px;
+  right: 0;
   transition: right 0.3s ease;
   margin-top: 0.04em;
-  position: absolute;
 }
 .side-bar.active {
+  display: block;
   right: 0;
 }
 .side-bar-links {
@@ -231,5 +231,5 @@ nav a:hover {
     width: 3em;
     height: 3em;
   }
-  
+
 }
