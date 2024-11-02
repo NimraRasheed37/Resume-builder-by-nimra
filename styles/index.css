@@ -88,6 +88,7 @@ nav a:hover {
   right: 0;
   transition: right 0.3s ease;
   margin-top: 0.04em;
+  position: absolute;
 }
 
 .side-bar-links {
@@ -97,7 +98,7 @@ nav a:hover {
   text-align: left;
   margin-top: 2em;
   margin-bottom: 2em;
-  gap: 2em;
+  gap: 1.2em;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -237,12 +238,15 @@ nav a:hover {
     width: 3em;
     height: 3em;
   }
+  .hero-section {
+    padding: 2em 1em;
+  }
   .hero-image img {
     width: 300px;
     height: 300px;
   }
   .hero-data{
-    width: 95%;
+    width: 80%;
   }
   .hero-data h1 {
     font-size: 2.5em;
