@@ -300,3 +300,12 @@ hr {
     width: 60%;
   }
 }
+
+@media (max-width: 800px){
+  .generated-resume{
+    width: 90%;
+  }
+  .btns{
+    margin: 1em 2em;
+  }
+}
