@@ -7,7 +7,7 @@ function closeSidebar() {
   sidebar.classList.remove('active');
   setTimeout(() => {
     sidebar.style.display = 'none';
-  }, 300); // Matches the transition duration
+  }, 30); // Matches the transition duration
 }
 
 // Toggle sidebar when the toggle button is clicked
@@ -18,7 +18,7 @@ toggleButton.addEventListener('click', () => {
     sidebar.style.display = 'block';
     setTimeout(() => {
       sidebar.classList.add('active');
-    }, 10);
+    }, 2);
   }
 });
 
