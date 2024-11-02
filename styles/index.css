@@ -1,0 +1,220 @@
+:root {
+  --background-color: #ffffff;
+  --background-dark: #be1e2d;
+  --background-light: rgb(230, 199, 172);
+  --text-color: #222222;
+  --shadow-color: ;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", "Roboto";
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: var(--background-light);
+  padding: 1em 4em;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-right: 1em;
+}
+.logo h2 {
+  color: var(--text-color);
+  font-size: 1.5em;
+}
+header img {
+  width: 3.5em;
+  height: 3.5em;
+}
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 20px;
+  margin-left: 3em;
+  font-weight: 600;
+}
+nav a:hover {
+  cursor: pointer;
+  color: var(--background-dark);
+  text-decoration: underline 6px;
+  text-underline-offset: 20px;
+}
+#home {
+  color: var(--background-dark);
+}
+#get-started {
+  background-color: var(--background-dark);
+  padding: 1em 3em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 3px var(--shadow-color);
+}
+#get-started a {
+  text-decoration: none;
+  color: var(--background-color);
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#get-started:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.fa-bars {
+  display: none;
+  color: var(--background-dark);
+  cursor: pointer;
+}
+/* Side bar styling */
+.side-bar {
+  display: none;
+  background-color: var(--background-light);
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  right: -400px;
+  transition: right 0.3s ease;
+  margin-top: 0.04em;
+  position: absolute;
+}
+.side-bar.active {
+  right: 0;
+}
+.side-bar-links {
+  list-style-type: none;
+  flex-direction: column;
+  display: flex;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  gap: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.side-bar-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 20px;
+  margin-left: 3em;
+  font-weight: 600;
+}
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  padding: 3em 4em;
+  height: 90vh;
+}
+.hero-data {
+  width: 50%;
+}
+.hero-data h1 {
+  color: var(--background-dark);
+  font-size: 4em;
+  text-shadow: 0px 2px 3px var(--text-color);
+  font-family: "Roboto";
+}
+.hero-data p {
+  font-size: 1.2em;
+  margin-top: 1em;
+  color: var(--text-color);
+  text-shadow: 0px 1px 2px var(--background-light);
+}
+#cv-btn {
+  margin-top: 2em;
+  padding: 1em 2em;
+  color: var(--background-color);
+  background-color: var(--background-dark);
+  border: none;
+  box-shadow: 0px 2px 4px var(--text-color);
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#cv-btn:hover {
+  background-color: var(--background-light);
+  color: var(--background-dark);
+}
+.fa-arrow-right {
+  margin-left: 8px;
+}
+.hero-image img {
+  width: 500px;
+  height: 500px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px var(--background-dark);
+}
+
+@media (max-width: 1390px) {
+  nav a {
+    margin-left: 2em;
+  }
+}
+@media (max-width: 1245px) {
+  nav a {
+    margin-left: 1em;
+  }
+}
+@media (max-width: 1150px) {
+  nav a {
+    display: none;
+  }
+  #get-started {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+  .hero-data {
+    width: 90%;
+  }
+  #cv-btn {
+    display: flex;
+  }
+  .side-bar {
+    display: block;
+  }
+  .side-bar-links a {
+    display: block;
+  }
+  #get-started2 {
+    margin-left: 4em;
+    display: block;
+    background-color: var(--background-dark);
+    padding: 1em 3em;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 3px var(--shadow-color);
+  }
+  #get-started2 a {
+    text-decoration: none;
+    color: var(--background-color);
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  #get-started2:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
