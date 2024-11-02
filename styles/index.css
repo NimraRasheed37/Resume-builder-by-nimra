@@ -90,6 +90,7 @@ nav a:hover {
   margin-top: 0.04em;
 }
 .side-bar.active {
+  display: block;
   right: 0;
 }
 .side-bar-links {
