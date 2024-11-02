@@ -218,3 +218,14 @@ nav a:hover {
     opacity: 0.9;
   }
 }
+
+@media (max-width: 480px){
+  .logo h2 {
+    color: var(--text-color);
+    font-size: 1em;
+  }
+  header img {
+    width: 3em;
+    height: 3em;
+  }
+}
