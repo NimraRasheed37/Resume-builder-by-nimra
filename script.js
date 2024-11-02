@@ -1,16 +1,18 @@
 const navBar = document.getElementById('nav-bar');
-const sideBar = document.getElementById('side-bar');
 const sideBarLinks = document.querySelectorAll("#side-bar .side-bar-links a");
+const sidebar = document.querySelector('.side-bar');
+const toggleButton = document.querySelector('.fa-bars'); // Adjust selector based on your button
 
-
-//open sidebar when clicked on navBar 
-navBar.addEventListener('click', () => {
-    sideBar.classList.toggle("active");
-});
-
-//close sidebar when any link is clicked
-sideBarLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        sideBar.classList.remove("active");
-    });
+toggleButton.addEventListener('click', () => {
+  if (sidebar.classList.contains('active')) {
+    sidebar.classList.remove('active');
+    setTimeout(() => {
+      sidebar.style.display = 'none'; // Hide after transition completes
+    }, 300); // Match the transition duration
+  } else {
+    sidebar.style.display = 'block'; // Show first to enable transition
+    setTimeout(() => {
+      sidebar.classList.add('active');
+    }, 10); // Small delay to ensure transition runs smoothly
+  }
 });
