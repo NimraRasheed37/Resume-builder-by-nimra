@@ -33,6 +33,25 @@ body {
   text-align: left;
   box-shadow: 0px 2px 8px var(--text-color);
 }
+.heading{
+  text-align: center;
+}
+.heading h1{
+  color: var(--background-dark);
+  text-shadow: 0px 1px 1px var(--text-color);
+  font-size: 2.3em;
+  font-family: "Poppins";
+}
+.heading p{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1.1em;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 500;
+  font-family: "Roboto";
+  box-shadow: 0px 2px 2px var(--background-dark);
+}
 section {
   box-shadow: 0px 2px 3px var(--text-color);
 }
