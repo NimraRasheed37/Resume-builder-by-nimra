@@ -1,16 +1,30 @@
-const navBar = document.getElementById('nav-bar');
-const sideBar = document.getElementById('side-bar');
-const sideBarLinks = document.querySelectorAll("#side-bar .side-bar-links a");
+const sidebar = document.querySelector('.side-bar');
+const toggleButton = document.querySelector('.fa-bars');
+const sidebarLinks = document.querySelectorAll('.side-bar-links a'); // Select all sidebar links
 
+// Function to close the sidebar
+function closeSidebar() {
+  sidebar.classList.remove('active');
+  setTimeout(() => {
+    sidebar.style.display = 'none';
+  }, 300); // Matches the transition duration
+}
 
-//open sidebar when clicked on navBar 
-navBar.addEventListener('click', () => {
-    sideBar.classList.toggle("active");
+// Toggle sidebar when the toggle button is clicked
+toggleButton.addEventListener('click', () => {
+  if (sidebar.classList.contains('active')) {
+    closeSidebar();
+  } else {
+    sidebar.style.display = 'block';
+    setTimeout(() => {
+      sidebar.classList.add('active');
+    }, 10);
+  }
 });
 
-//close sidebar when any link is clicked
-sideBarLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        sideBar.classList.remove("active");
-    });
+// Close sidebar when any link inside it is clicked
+sidebarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeSidebar();
+  });
 });
