@@ -302,10 +302,10 @@ hr {
 }
 
 @media (max-width: 800px){
-  .generated-resume{
+  #generated-resume{
     width: 90%;
   }
   .btns{
-    margin: 1em 2em;
+    margin: 1em 3em;
   }
 }
