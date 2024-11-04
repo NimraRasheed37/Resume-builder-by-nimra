@@ -139,9 +139,6 @@ input {
   box-shadow: 0px 1px 2px var(--background-dark);
 }
 
-#inputBox .skills-input {
-  margin-top: 10px;
-}
 
 .skills-input:hover {
   border-color: #e44f57;
@@ -305,4 +302,59 @@ hr {
   .btns{
     margin: 1em 3em;
   }
+}
+@media (max-width: 500px){
+  .heading h1{
+    font-size: 1.6em;
+  }
+  .heading p{
+    font-size: 1em;
+    width: 90%;
+    padding: .3em;
+  }
+  label {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  input {
+    padding: 4px 40px;
+    font-size: 14px;
+  }
+  .add-more {
+    margin: 1em auto;
+    padding: .5em 1em;
+    font-size: .6em;
+  }
+  .skills-input {
+    width: 90%;
+    padding: .6em;
+    font-size: 12px;
+  }
+  #submit {
+    margin: 1em auto;
+    padding: .5em 1.5em;
+    font-size: 1em;
+  }
+
+  /* Resume */
+  
+#personal-data{
+  padding: 1em;
+}
+#profile-photo {
+  width: 100px;
+  height: 100px;
+}
+#data-grid h1 {
+  font-size: 1.1rem;
+}
+#data-grid p {
+  font-size: .6em;
+}
+.btns{
+  margin: 1em 4em;
+}
 }
