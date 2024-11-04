@@ -354,6 +354,11 @@ hr {
 #data-grid p {
   font-size: .6em;
 }
+#edit-resume,
+#download-pdf {
+    padding: .5em 1em;
+    font-size: 12px;
+}
 .btns{
   margin: 1em 4em;
 }
