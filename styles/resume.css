@@ -360,6 +360,7 @@ hr {
     font-size: 12px;
 }
 .btns{
-  margin: 1em 4em;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 }
