@@ -1,3 +1,4 @@
+/*
 // Function to add a new education section
 function addEducationSection() {
     // Get the area where all education sections are stored
@@ -35,7 +36,62 @@ function addEducationSection() {
     // Add the new section to the list of experience sections
     experienceSections?.appendChild(newExperience);
   }
+  */
+
+  // Function to add a new education section
+function addEducationSection() {
+  // Get the area where all education sections are stored
+  const educationSections = document.getElementById('education-sections');
   
+  // Find the first education section and copy (clone) it
+  const firstEducation = document.querySelector('.education') as HTMLElement;
+  const newEducation = firstEducation.cloneNode(true) as HTMLElement;
+
+  // Clear the input fields in the new education section
+  const inputs = newEducation.querySelectorAll('input');
+  inputs.forEach((input) => {
+    input.value = '';
+  });
+
+  // Create a close button
+  const closeButton = document.createElement('button');
+  closeButton.textContent = 'X';
+  closeButton.className = 'close-btn';
+
+  // Add an event listener to the close button to remove the section
+  closeButton.addEventListener('click', () => {
+    newEducation.remove();
+  });
+
+  // Append the close button to the new education section
+  newEducation.appendChild(closeButton);
+
+  // Add the new section to the list of education sections
+  educationSections?.appendChild(newEducation);
+}
+
+// Function to add a new experience section
+function addExperienceSection() {
+  const experienceSections = document.getElementById('experience-sections');
+  const firstExperience = document.querySelector('.experience') as HTMLElement;
+  const newExperience = firstExperience.cloneNode(true) as HTMLElement;
+
+  const inputs = newExperience.querySelectorAll('input');
+  inputs.forEach((input) => {
+    input.value = '';
+  });
+
+  const closeButton = document.createElement('button');
+  closeButton.textContent = 'X';
+  closeButton.className = 'close-btn';
+  closeButton.addEventListener('click', () => {
+    newExperience.remove();
+  });
+
+  newExperience.appendChild(closeButton);
+  experienceSections?.appendChild(newExperience);
+}
+
   // Add click events to the buttons to trigger the functions when clicked
   document.getElementById('add-more-education')?.addEventListener('click', addEducationSection);
   document.getElementById('add-more-experience')?.addEventListener('click', addExperienceSection);

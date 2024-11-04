@@ -1,3 +1,42 @@
+/*
+// Function to add a new education section
+function addEducationSection() {
+    // Get the area where all education sections are stored
+    const educationSections = document.getElementById('education-sections');
+    
+    // Find the first education section and copy (clone) it
+    const firstEducation = document.querySelector('.education') as HTMLElement;
+    const newEducation = firstEducation.cloneNode(true) as HTMLElement;
+  
+    // Clear the input fields in the new education section
+    const inputs = newEducation.querySelectorAll('input');
+    inputs.forEach((input) => {
+      input.value = '';
+    });
+  
+    // Add the new section to the list of education sections
+    educationSections?.appendChild(newEducation);
+  }
+  
+  // Function to add a new experience section
+  function addExperienceSection() {
+    // Get the area where all experience sections are stored
+    const experienceSections = document.getElementById('experience-sections');
+  
+    // Find the first experience section and copy (clone) it
+    const firstExperience = document.querySelector('.experience') as HTMLElement;
+    const newExperience = firstExperience.cloneNode(true) as HTMLElement;
+  
+    // Clear the input fields in the new experience section
+    const inputs = newExperience.querySelectorAll('input');
+    inputs.forEach((input) => {
+      input.value = '';
+    });
+  
+    // Add the new section to the list of experience sections
+    experienceSections?.appendChild(newExperience);
+  }
+  */
 var _a, _b, _c, _d, _e, _f;
 // Function to add a new education section
 function addEducationSection() {
@@ -11,38 +50,40 @@ function addEducationSection() {
     inputs.forEach(function (input) {
         input.value = '';
     });
+    // Create a close button
+    var closeButton = document.createElement('button');
+    closeButton.textContent = 'X';
+    closeButton.className = 'close-btn';
+    // Add an event listener to the close button to remove the section
+    closeButton.addEventListener('click', function () {
+        newEducation.remove();
+    });
+    // Append the close button to the new education section
+    newEducation.appendChild(closeButton);
     // Add the new section to the list of education sections
     educationSections === null || educationSections === void 0 ? void 0 : educationSections.appendChild(newEducation);
 }
 // Function to add a new experience section
 function addExperienceSection() {
-    // Get the area where all experience sections are stored
     var experienceSections = document.getElementById('experience-sections');
-    // Find the first experience section and copy (clone) it
     var firstExperience = document.querySelector('.experience');
     var newExperience = firstExperience.cloneNode(true);
-    // Clear the input fields in the new experience section
     var inputs = newExperience.querySelectorAll('input');
     inputs.forEach(function (input) {
         input.value = '';
     });
-    // Add the new section to the list of experience sections
+    var closeButton = document.createElement('button');
+    closeButton.textContent = 'X';
+    closeButton.className = 'close-btn';
+    closeButton.addEventListener('click', function () {
+        newExperience.remove();
+    });
+    newExperience.appendChild(closeButton);
     experienceSections === null || experienceSections === void 0 ? void 0 : experienceSections.appendChild(newExperience);
 }
 // Add click events to the buttons to trigger the functions when clicked
 (_a = document.getElementById('add-more-education')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', addEducationSection);
 (_b = document.getElementById('add-more-experience')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', addExperienceSection);
-// Function to add new skills in the skills section by clicking on + button
-function addTextInput(event) {
-    event.preventDefault(); // Prevent form submission or page refresh
-    var container = document.getElementById('inputBox');
-    var input = document.createElement('input');
-    input.type = 'text';
-    input.className = 'skills-input'; // Applying the same class as the existing inputs
-    var lineBreak = document.createElement('br');
-    container === null || container === void 0 ? void 0 : container.appendChild(input);
-    container === null || container === void 0 ? void 0 : container.appendChild(lineBreak);
-}
 // Function to generate the resume when the form is submitted
 function generateResume(event) {
     var _a;
