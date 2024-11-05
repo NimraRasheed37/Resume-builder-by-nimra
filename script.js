@@ -28,3 +28,18 @@ sidebarLinks.forEach(link => {
     closeSidebar();
   });
 });
+
+
+
+//function to send email request
+function openEmail() {
+    const email = "nimrarasheed.na@gmail.com";
+    const subject = "Contact Us";
+    const body = "Hello, I would like to get in touch.";
+
+    // Construct the mailto link
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+}

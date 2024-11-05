@@ -133,7 +133,7 @@ nav a:hover {
   color: var(--text-color);
   text-shadow: 0px 1px 2px var(--background-light);
 }
-.hero-data a{
+.hero-data a {
   text-decoration: none;
 }
 #cv-btn {
@@ -162,6 +162,79 @@ nav a:hover {
   box-shadow: 2px 3px 6px var(--background-dark);
 }
 
+/* contact section */
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  padding: 3em 4em;
+  height: auto;
+  background-image: url(/images/red-bg.jpeg);
+}
+.res-image img {
+  margin-left: 2em;
+  width: 300px;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px var(--background-dark);
+}
+.res-data{
+  text-align: center;
+}
+.res-data h1 {
+  color: var(--background-color);
+  font-size: 3.5em;
+  text-shadow: 0px 2px 3px var(--text-color);
+  font-family: "Roboto";
+}
+.res-data p {
+  
+  width: 60%;
+  font-size: 1.2em;
+  margin: 1em auto;
+  color: var(--background-color);
+  text-shadow: 0px 1px 2px var(--text-color);
+}
+
+.contact-btn {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2em;
+  padding: 1em 2em;
+  background-color: var(--background-light);
+  border: none;
+  box-shadow: 0px 2px 4px var(--text-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: var(--background-color);
+  color: var(--background-dark);
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: auto;
+  padding-inline: 1em;
+  background: var(--background-dark);
+}
+.fa-copyright {
+  font-size: 18px;
+}
+
+footer p {
+  color: var(--background-color);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  text-shadow: 0px 1px 2px var(--text-color);
+}
 @media (max-width: 1390px) {
   nav a {
     margin-left: 2em;
@@ -189,6 +262,17 @@ nav a:hover {
     height: auto;
   }
   .hero-data {
+    width: 90%;
+  }
+  .res-image img{
+    width: 200px;
+    height: 200px;
+  }
+  .res-data h1{
+    font-size: 2em;
+  }
+  .res-data p{
+    font-size: 1.2em;
     width: 90%;
   }
   #cv-btn {
@@ -222,11 +306,11 @@ nav a:hover {
   }
 }
 
-@media (max-width: 800px){
-  header{
+@media (max-width: 800px) {
+  header {
     padding: 1em;
   }
-  .logo{
+  .logo {
     margin: 0;
     width: 90%;
   }
@@ -245,8 +329,27 @@ nav a:hover {
     width: 300px;
     height: 300px;
   }
-  .hero-data{
+  .hero-data {
     width: 80%;
+  }
+  .contact{
+    gap: 1em;
+  }
+  .res-image img{
+    width: 160px;
+    height: 160px;
+    margin-left: 1em;
+  }
+  .res-data h1{
+    font-size: 1.5em;
+  }
+  .res-data p{
+    font-size: .7em;
+    width: 100%;
+  }
+  .contact-btn{
+    margin-top: .5em;
+    padding: .5em 2em;
   }
   .hero-data h1 {
     font-size: 2.5em;
@@ -255,12 +358,12 @@ nav a:hover {
     font-size: 1em;
     margin-top: 1em;
   }
-  #cv-btn{
+  #cv-btn {
     padding: 1em 1.5em;
     font-size: 1em;
     margin: 2em auto;
   }
-  #nav-bar{
+  #nav-bar {
     margin-left: 0;
   }
 }
