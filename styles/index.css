@@ -338,7 +338,7 @@ footer p {
   .res-image img{
     width: 120px;
     height: 120px;
-    margin-left: 1em;
+    margin-left: 0;
   }
   .res-data h1{
     font-size: 1.1em;
@@ -348,8 +348,9 @@ footer p {
     width: 100%;
   }
   .contact-btn{
+    font-size: 12px;
     margin-top: .5em;
-    padding: .5em 2em;
+    padding: .3em 1em;
   }
   .hero-data h1 {
     font-size: 2.5em;
