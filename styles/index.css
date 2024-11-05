@@ -336,15 +336,15 @@ footer p {
     gap: 1em;
   }
   .res-image img{
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     margin-left: 1em;
   }
   .res-data h1{
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   .res-data p{
-    font-size: .7em;
+    font-size: .5em;
     width: 100%;
   }
   .contact-btn{
