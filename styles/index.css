@@ -336,21 +336,20 @@ footer p {
     gap: 1em;
   }
   .res-image img{
-    width: 120px;
-    height: 120px;
-    margin-left: 0;
+    width: 160px;
+    height: 160px;
+    margin-left: 1em;
   }
   .res-data h1{
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   .res-data p{
-    font-size: .5em;
+    font-size: .7em;
     width: 100%;
   }
   .contact-btn{
-    font-size: 12px;
     margin-top: .5em;
-    padding: .3em 1em;
+    padding: .5em 2em;
   }
   .hero-data h1 {
     font-size: 2.5em;
@@ -366,5 +365,11 @@ footer p {
   }
   #nav-bar {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .contact{
+ padding: 2em 1em;
   }
 }
