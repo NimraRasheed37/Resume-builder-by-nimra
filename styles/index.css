@@ -372,4 +372,17 @@ footer p {
   .contact{
  padding: 2em 1em;
   }
+  .res-image img{
+    width: 120px;
+    height: 120px;
+  }
+  .res-data h1{
+    font-size: 1.2em;
+  }
+  .res-data p{
+    font-size: .5em;
+  }
+  .contact-btn{
+    padding: .3em 1em
+  }
 }
