@@ -232,7 +232,7 @@ input {
 
 #skills-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: .2rem;
   align-items: center;
@@ -372,7 +372,7 @@ hr {
 #edit-resume,
 #download-pdf {
     padding: .5em 1em;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 }
