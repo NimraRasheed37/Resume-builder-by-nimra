@@ -313,6 +313,10 @@ hr {
   #generated-resume{
     width: 100%;
   }
+  .resume-content{
+    margin: 0 auto;
+    width: 80%;
+  }
   .btns{
     margin: 1em 3em;
   }
@@ -359,8 +363,12 @@ hr {
   padding: 1em;
 }
 #profile-photo {
+  margin-left: 3em;
   width: 100px;
   height: 100px;
+}
+#data-grid{
+  margin-right: 2em;
 }
 #data-grid h1 {
   font-size: 1.1rem;
