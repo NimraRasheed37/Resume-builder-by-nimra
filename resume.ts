@@ -227,3 +227,5 @@ document.getElementById('download-pdf')?.addEventListener('click',(event) => {
   event.preventDefault();
   downloadResumeAsPDF();
 } );
+
+

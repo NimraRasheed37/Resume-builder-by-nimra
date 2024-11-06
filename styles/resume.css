@@ -11,7 +11,7 @@
 }
 body {
   background-color: rgb(211, 209, 209);
-  color: var(var(--text-color));
+  color: var(--text-color);
   font-family: "Poppins", 'Roboto';
 }
 .heading {
@@ -38,7 +38,7 @@ body {
 }
 .heading h1{
   color: var(--background-dark);
-  text-shadow: 0px 1px 1px var(--text-color);
+  /* text-shadow: 0px 1px 1px var(--text-color); */
   font-size: 2.3em;
   font-family: "Poppins";
 }
@@ -74,7 +74,7 @@ h3 {
   font-size: 1.7em;
   color: var(--background-dark);
   background-color: var(--background-light);
-  text-shadow: 0px 1px 1px var(--text-color);
+  /* text-shadow: 0px 1px 1px var(--text-color); */
 }
 .skills-input {
   display: flex;
@@ -173,7 +173,7 @@ input {
   background-color: var(--background-light);
   cursor: pointer;
   color: var(--background-dark);
-  text-shadow: 0px 1px 1px var(--text-color);
+  /* text-shadow: 0px 1px 1px var(--text-color); */
   margin-bottom: 2rem;
   font-size: 1.3em;
   font-weight: bold;
@@ -196,10 +196,9 @@ input {
 
 #personal-data{
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em;
+  padding: 1em 3em;
   height: auto;
   background-color: var(--background-dark);
   color: var(--background-color);
@@ -214,20 +213,18 @@ input {
 #data-grid{
   display: flex;
   flex-direction: column;
-  align-items: left;
-  gap: .2em;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: .3em;
   width: 80%;
 }
 #data-grid h1 {
-  text-align: center;
   font-size: 1.3rem;
   margin-bottom: .5em;
-  text-shadow: 0px 2px 2px var(--text-color);
+  /* text-shadow: 0px 2px 2px var(--text-color); */
 }
 #data-grid p {
-  margin-left: 3em;
   font-size: .9em;
-  text-shadow: none;
 }
 
 #skills-list {
@@ -280,6 +277,8 @@ hr {
   font-size: 1em;
 }
 #resume-content {
+  margin: 0 auto;
+  width: 90%;
   border: solid 2px var(--text-color);
   background-color: var(--background-color);
 }
